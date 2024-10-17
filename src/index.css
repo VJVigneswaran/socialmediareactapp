@@ -1,13 +1,162 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body{
+  min-height: 100vh;
+}
+
+#root{
+  min-height: 100vh;
+}
+
+.App{
+  min-height: 100vh;
+}
+
+header{
+  text-align: center;
+  background-color: green;
+  padding: 1rem;
+}
+
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+nav li a{
+  color: white;
+  text-decoration: none;
+  padding:10px 0;
+  width: 100%;
+  display: block;
+}
+nav li {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+nav li:hover{
+  background-color: green;
+  color:black;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+nav li a:hover{
+  color: black;
+
+}
+
+.App main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+footer{
+  width: 100%;
+  background-color: green;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p{
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+main ul{
+  width: 100%;
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+main .postCard{
+  width: 80%;
+  padding:1.5em;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0.5em 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.searchform{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchform input[type="text"]{
+  padding: 0.5em;
+}
+
+.newpostform{
+  position: relative;
+  width: 80%;
+  margin: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  gap:30px;
+}
+
+.newpostform h2{
+  text-align: center;
+}
+
+.newpostform button{
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  margin: 0 20%;
+}
+
+.newpostform input{
+  width: 80%;
+  margin: 0 10%;
+  padding:10px;
+}
+
+.newpostform label{
+  font-size: 1.5rem;
+}
+
+.card{
+  width: 80%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about{
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
 }
